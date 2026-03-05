@@ -11,6 +11,10 @@ function buttonsCharged(buttonNumbers) {
     })
 }
 
+chargeBtn.addEventListener('click', () => {
+    buttonsCharged(buttonNumbers);
+})
+
 // function buttonsCharged(buttonNumbers, divBtns) {
 //     buttonNumbers.forEach((buttonNumber) => {
 //         const btn = document.createElement("button");
@@ -21,7 +25,6 @@ function buttonsCharged(buttonNumbers) {
 //     divBtns.appendChild(fragment)
 // }
 
-chargeBtn.addEventListener("click", buttonsCharged(buttonNumbers));
 
 
 
